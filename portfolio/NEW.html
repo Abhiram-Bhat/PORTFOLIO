@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abhiram's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4}.container{max-width:800px;margin:20px auto;padding:20px;background-color:#fff;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1)}h1{text-align:center;margin-bottom:20px;color:#333;text-transform:uppercase;font-size:36px;letter-spacing:2px}img{display:block;margin:0 auto;width:200px;height:auto;border-radius:50%;margin-bottom:20px}.info{margin-bottom:20px;text-align:center}.info h2{margin-bottom:10px;font-size:24px;color:#007bff}.info p{margin:5px 0;font-size:18px}.links{text-align:center;margin-bottom:20px}.links a{display:inline-block;margin:0 20px;color:#333;text-decoration:none;font-size:24px}.links a:hover{color:#007bff}.section{display:none}.active{display:block}.more-about-me{margin-bottom:20px}.more-about-me h2{margin-bottom:10px;text-align:center;color:#007bff}.more-about-me p{text-align:justify;margin:0 auto;width:80%;font-size:18px;line-height:1.5}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Portfolio</h1>
+        <img src="C:\Users\ADMIN\Desktop\portfolio\your_photo.jpg.jpg" alt="Abhiram">
+        <div class="info">
+            <h2>Personal Information</h2>
+            <p>Name:Abhiram T A</p>
+            <P>Educational qualification:BE in AIML</P>
+            <p>Email: abhiramta742@gmail.com</p>
+            <p>Phone: 9482598XXXX</p>
+        </div>
+        <div class="links">
+            <p>Click here to contact</p>
+            <a href="https://github.com/Abhiram-Bhat/Abhiramta.git" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        </div>
+        <center><p>Click here to know about me</p></center>
+        <div class="links">
+            <a href="#" onclick="toggleSection('academics')"><i class="fas fa-graduation-cap"></i> Academics</a>
+            <a href="#" onclick="toggleSection('hobbies')"><i class="fas fa-hiking"></i> Hobbies</a>
+            <a href="#" onclick="toggleSection('skills')"><i class="fas fa-laptop-code"></i> Skills</a>
+            <a href="#" onclick="toggleSection('tools')"><i class="fas fa-tools"></i> Tools</a>
+            <a href="#" onclick="toggleSection('roles')"><i class="fas fa-user-tie"></i> Roles Expecting</a>
+        </div>
+        <div id="academics" class="section">
+            <h2>Academic Achievements</h2>
+            <p>Completed my 10th Standard at Darshini Composite High School, Sringeri with an score of 82%.</p>
+            <p>Completed my PU in BGS PU College, Sringeri in PCMB with a score of 78%.</p>
+            <p>current CGPA=8.5</p>
+        </div>
+        <div id="hobbies" class="section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Swimming</li>
+                <li>Hiking</li>
+                <li>Reading Fictional Books</li>
+            </ul>
+        </div>
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Full Stack Web Developer</li>
+                <li>Languages: C, Python,Javascript</li>
+                <li>Frameworks:Angular,Django,Express.js</li>
+            </ul>
+        </div>
+        <div id="tools" class="section">
+            <h2>Tools</h2>
+            <ul>
+                <li>*Android studio </li>
+                <li>*VS CODE,JUPITER NOTEBOOK</li>
+                <li>*GIT,GITHUB,DOCKER(basic)</li>
+            </ul>
+        </div>
+        <div id="roles" class="section">
+            <h2>Roles expecting</h2>
+            <ul>
+                <li>Full Stack Web Developer</li>
+                <li>Frontend,Backend</li>
+                <li>ML Engineer(can train basic ai models)</li>
+            </ul>
+        </div>
+        <div class="more-about-me">
+            <h2>More About Me</h2>
+            <p>My name is Abhiram and I am currently studying engineering in Artificial Intelligence and Machine Learning. I am in my 2nd year and passionate about exploring opportunities in web development. My areas of interest include ML,webdev etc.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === 'block') {
+                section.style.display = 'none';
+            } else {
+                section.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
